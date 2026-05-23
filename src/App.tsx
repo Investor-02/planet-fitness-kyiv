@@ -84,8 +84,13 @@ function Header({ lang, setLang }: { lang: Lang; setLang: (lang: Lang) => void }
   return (
     <header className="site-header">
       <Link className="brand" to="/" onClick={() => setOpen(false)}>
-        <img src={images.logo} width="44" height="44" alt="Planet Fitness Kyiv logo" />
-        <span>Planet Fitness Kyiv</span>
+        <span className="brand-mark">
+          <img src={images.logo} width="92" height="92" alt="Planet Fitness Kyiv logo" />
+        </span>
+        <span className="brand-copy">
+          <strong>Planet Fitness</strong>
+          <small>Kyiv</small>
+        </span>
       </Link>
       <nav className="desktop-nav" aria-label="Main navigation">
         {items.map(([path, label]) => (
@@ -97,7 +102,7 @@ function Header({ lang, setLang }: { lang: Lang; setLang: (lang: Lang) => void }
       <div className="header-actions">
         <button className="lang-toggle" type="button" onClick={() => setLang(lang === 'ua' ? 'en' : 'ua')} aria-label="Switch language">
           <Languages size={16} aria-hidden="true" />
-          {lang === 'ua' ? 'EN' : 'UA'}
+          <span>{lang === 'ua' ? 'EN' : 'UA'}</span>
         </button>
         <button className="menu-toggle" type="button" onClick={() => setOpen((value) => !value)} aria-label="Menu">
           {open ? <X size={22} /> : <Menu size={22} />}
@@ -146,7 +151,7 @@ function Home({ lang }: { lang: Lang }) {
     <Page>
       <section className="hero-section">
         <div className="hero-media" aria-hidden="true">
-          <img className="hero-main" src={images.heroGym} alt="" />
+          <img className="hero-main" src={images.strength} alt="" />
           <img className="hero-float" src={images.heroTraining} alt="" />
         </div>
         <div className="hero-content">
@@ -187,7 +192,7 @@ function Home({ lang }: { lang: Lang }) {
 
       <section className="section">
         <div className="section-heading">
-          <span className="eyebrow">{t.common.sourceNote}</span>
+          <span className="eyebrow">{t.home.sectionsEyebrow}</span>
           <h2>{t.home.sectionsTitle}</h2>
         </div>
         <div className="route-grid">
@@ -256,7 +261,7 @@ function Memberships({ lang }: { lang: Lang }) {
   const t = copy[lang]
   return (
     <Page>
-      <SectionIntro eyebrow={t.common.sourceNote} title={t.memberships.title} text={t.memberships.subtitle} />
+      <SectionIntro eyebrow={t.memberships.eyebrow} title={t.memberships.title} text={t.memberships.subtitle} />
       <section className="membership-grid">
         {memberships[lang].map((item) => (
           <article className="membership-card" key={item.name}>
@@ -306,7 +311,7 @@ function Contacts({ lang }: { lang: Lang }) {
             <MapPin aria-hidden="true" />
             <div>
               <span>{t.contacts.addressLabel}</span>
-              <strong>Golosiivsky prospekt, 132, Kyiv, Ukraine</strong>
+              <strong>{t.contacts.address}</strong>
               <p>{t.contacts.metro}</p>
             </div>
           </div>
@@ -357,7 +362,7 @@ function Footer({ lang }: { lang: Lang }) {
         <img src={images.logo} alt="" loading="lazy" />
         <span>Planet Fitness Kyiv</span>
       </div>
-      <p>{t.common.sourceNote}</p>
+      <p>{t.common.footerLine} {t.common.clubLine}</p>
       <a href={links.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
         <MessageCircle size={20} />
       </a>

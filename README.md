@@ -1,6 +1,6 @@
 # Planet Fitness Kyiv
 
-Official-looking website MVP for Planet Fitness Kyiv, built from public and authenticated Instagram profile content supplied in the browser session.
+Official-looking website for Planet Fitness Kyiv, built from public and authenticated Instagram profile content supplied in the browser session.
 
 ## Stack
 
