@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Investor-02.github.io/planet-fitness-kyiv/sitemap.xml
