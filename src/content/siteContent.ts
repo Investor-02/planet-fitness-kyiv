@@ -11,7 +11,7 @@ export const links = {
 }
 
 export const images = {
-  logo: asset('images/instagram/logo-plaque.webp'),
+  logo: asset('images/instagram/logo-clean.webp'),
   heroGym: asset('images/instagram/hero-gym.webp'),
   heroTraining: asset('images/instagram/hero-training.webp'),
   cardio: asset('images/instagram/cardio-zone.webp'),

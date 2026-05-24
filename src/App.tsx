@@ -84,13 +84,7 @@ function Header({ lang, setLang }: { lang: Lang; setLang: (lang: Lang) => void }
   return (
     <header className="site-header">
       <Link className="brand" to="/" onClick={() => setOpen(false)}>
-        <span className="brand-mark">
-          <img src={images.logo} width="92" height="92" alt="Planet Fitness Kyiv logo" />
-        </span>
-        <span className="brand-copy">
-          <strong>Planet Fitness</strong>
-          <small>Kyiv</small>
-        </span>
+        <img src={images.logo} width="52" height="52" alt="Planet Fitness Kyiv logo" />
       </Link>
       <nav className="desktop-nav" aria-label="Main navigation">
         {items.map(([path, label]) => (
@@ -152,7 +146,6 @@ function Home({ lang }: { lang: Lang }) {
       <section className="hero-section">
         <div className="hero-media" aria-hidden="true">
           <img className="hero-main" src={images.strength} alt="" />
-          <img className="hero-float" src={images.heroTraining} alt="" />
         </div>
         <div className="hero-content">
           <span className="eyebrow">{t.common.eyebrow}</span>
@@ -162,9 +155,6 @@ function Home({ lang }: { lang: Lang }) {
             <ButtonLink href={links.direct}>{t.common.join}</ButtonLink>
             <ButtonLink to="/memberships" variant="ghost">
               {t.common.memberships}
-            </ButtonLink>
-            <ButtonLink href={links.maps} variant="dark">
-              {t.common.route}
             </ButtonLink>
           </div>
         </div>
