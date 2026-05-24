@@ -224,14 +224,36 @@ img {
   position: absolute;
   inset: calc(100% + 10px) 0 auto;
   display: grid;
-  gap: 0.35rem;
-  padding: 0.7rem;
-  border: 1px solid var(--line);
+  gap: 0.55rem;
+  padding: 0.85rem;
+  border: 1px solid rgba(18, 240, 255, 0.38);
   border-radius: 8px;
   background:
-    linear-gradient(160deg, rgba(255, 47, 212, 0.08), transparent 32%, rgba(18, 240, 255, 0.07)),
-    rgba(8, 8, 12, 0.96);
-  backdrop-filter: blur(20px);
+    linear-gradient(145deg, rgba(255, 47, 212, 0.18), transparent 30%, rgba(18, 240, 255, 0.16)),
+    linear-gradient(180deg, rgba(12, 10, 18, 0.99), rgba(3, 8, 11, 0.985));
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.58),
+    inset 0 0 0 1px rgba(255, 47, 212, 0.16);
+  backdrop-filter: blur(24px) saturate(1.18);
+}
+
+.mobile-nav a {
+  min-height: 58px;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(246, 243, 255, 0.78);
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 1.05rem;
+}
+
+.mobile-nav a.active {
+  color: #fff;
+  border-color: rgba(18, 240, 255, 0.72);
+  background:
+    linear-gradient(135deg, rgba(18, 240, 255, 0.24), rgba(255, 47, 212, 0.18)),
+    rgba(255, 255, 255, 0.07);
+  box-shadow:
+    inset 0 0 22px rgba(18, 240, 255, 0.12),
+    0 14px 34px rgba(18, 240, 255, 0.12);
 }
 
 .hero-section {
