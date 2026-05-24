@@ -94,7 +94,7 @@ function Header({ lang, setLang }: { lang: Lang; setLang: (lang: Lang) => void }
       </nav>
       <div className="header-actions">
         <button className="lang-toggle" type="button" onClick={() => setLang(lang === 'ua' ? 'en' : 'ua')} aria-label="Switch language">
-          <span>{lang === 'ua' ? 'English' : 'UA'}</span>
+          <span>{lang === 'ua' ? 'ENG' : 'UA'}</span>
         </button>
         <button className="menu-toggle" type="button" onClick={() => setOpen((value) => !value)} aria-label="Menu">
           {open ? <X size={22} /> : <Menu size={22} />}

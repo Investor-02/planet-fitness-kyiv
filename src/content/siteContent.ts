@@ -11,7 +11,7 @@ export const links = {
 }
 
 export const images = {
-  logo: asset('images/instagram/logo-clean.webp'),
+  logo: asset('images/instagram/logo-clean-tight.webp'),
   heroGym: asset('images/instagram/hero-gym.webp'),
   heroTraining: asset('images/instagram/hero-training.webp'),
   cardio: asset('images/instagram/cardio-zone.webp'),
@@ -205,13 +205,13 @@ export const trainingItems = {
       title: 'Тренажерний зал',
       tag: 'Кардіо + силові',
       text: 'Сучасне обладнання, кардіо-зона, силові тренажери та великий гантельний ряд для повноцінних тренувань.',
-      image: images.strength,
+      image: images.galleryRow,
     },
     {
       title: 'Персональні тренування',
       tag: 'План під цілі',
       text: 'Тренери підказують техніку, підтримують, страхують і допомагають скласти індивідуальний план.',
-      image: images.floor,
+      image: images.galleryLunge,
     },
     {
       title: 'Стретчинг',
@@ -237,13 +237,13 @@ export const trainingItems = {
       title: 'Gym floor',
       tag: 'Cardio + strength',
       text: 'Modern equipment, a cardio zone, strength machines and a large dumbbell range for complete workouts.',
-      image: images.strength,
+      image: images.galleryRow,
     },
     {
       title: 'Personal training',
       tag: 'Goal based plan',
       text: 'Trainers guide technique, support you, spot safely and help build an individual training plan.',
-      image: images.floor,
+      image: images.galleryLunge,
     },
     {
       title: 'Stretching',
