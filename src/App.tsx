@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Clock,
   Dumbbell,
-  Languages,
   MapPin,
   Menu,
   MessageCircle,
@@ -95,8 +94,7 @@ function Header({ lang, setLang }: { lang: Lang; setLang: (lang: Lang) => void }
       </nav>
       <div className="header-actions">
         <button className="lang-toggle" type="button" onClick={() => setLang(lang === 'ua' ? 'en' : 'ua')} aria-label="Switch language">
-          <Languages size={16} aria-hidden="true" />
-          <span>{lang === 'ua' ? 'EN' : 'UA'}</span>
+          <span>{lang === 'ua' ? 'English' : 'UA'}</span>
         </button>
         <button className="menu-toggle" type="button" onClick={() => setOpen((value) => !value)} aria-label="Menu">
           {open ? <X size={22} /> : <Menu size={22} />}
@@ -323,9 +321,6 @@ function Contacts({ lang }: { lang: Lang }) {
           </div>
           <div className="contact-actions">
             <ButtonLink href={links.direct}>{t.common.direct}</ButtonLink>
-            <ButtonLink href={links.instagram} variant="ghost">
-              {t.common.instagram}
-            </ButtonLink>
             <ButtonLink href={links.maps} variant="dark">
               {t.common.route}
             </ButtonLink>

@@ -20,9 +20,9 @@ export const images = {
   recovery: asset('images/instagram/recovery.webp'),
   samboKids: asset('images/instagram/sambo-kids.webp'),
   location: asset('images/instagram/location-exterior.webp'),
-  denys: asset('images/instagram/trainer-denys.webp'),
-  yulia: asset('images/instagram/trainer-yulia-portrait.webp'),
-  polina: asset('images/instagram/trainer-polina.webp'),
+  denys: asset('images/instagram/trainer-denys-clean.webp'),
+  yulia: asset('images/instagram/trainer-yulia-clean.webp'),
+  polina: asset('images/instagram/trainer-polina-solo.webp'),
   trainerTeam: asset('images/instagram/trainer-team-new.webp'),
   group: asset('images/instagram/gallery-group.webp'),
   priceStart: asset('images/instagram/price-start-2-months.webp'),
@@ -286,18 +286,6 @@ export const trainers = {
       text: 'Представлена у тренерському контенті клубу разом із Денисом у форматі технічного батлу.',
       image: images.polina,
     },
-    {
-      name: 'Команда Planet Fitness',
-      role: 'Професійні тренери',
-      text: 'Команда залу підказує, підтримує, страхує і допомагає рухатися безпечно та стабільно.',
-      image: images.trainerTeam,
-    },
-    {
-      name: 'KHMELIUK ACADEMY',
-      role: 'Самбо у локації клубу',
-      text: 'Партнерський напрям самбо для дітей від 6 років, підлітків і дорослих за адресою клубу.',
-      image: images.samboKids,
-    },
   ],
   en: [
     {
@@ -317,18 +305,6 @@ export const trainers = {
       role: 'Planet Fitness trainer',
       text: 'Featured in the club trainer content with Denys in a technique battle format.',
       image: images.polina,
-    },
-    {
-      name: 'Planet Fitness team',
-      role: 'Professional trainers',
-      text: 'The gym team guides, supports, spots safely and helps you move with steady progress.',
-      image: images.trainerTeam,
-    },
-    {
-      name: 'KHMELIUK ACADEMY',
-      role: 'Sambo at the club location',
-      text: 'Partner sambo direction for kids from 6, teens and adults at the club address.',
-      image: images.samboKids,
     },
   ],
 } as const
@@ -401,15 +377,12 @@ export const memberships = {
 } as const
 
 export const gallery = [
-  { image: images.strength, altUa: 'Силова зона та тренажери Planet Fitness Kyiv', altEn: 'Planet Fitness Kyiv strength zone and machines', tone: 'wide' },
-  { image: images.heroTraining, altUa: 'Тренування у залі Planet Fitness Kyiv', altEn: 'Training at Planet Fitness Kyiv', tone: 'tall' },
-  { image: images.galleryBench, altUa: 'Жим у зоні силових тренувань', altEn: 'Bench press in the strength area', tone: 'tall' },
-  { image: images.galleryLunge, altUa: 'Функціональна вправа у залі', altEn: 'Functional exercise in the gym', tone: 'tall' },
-  { image: images.galleryLeg, altUa: 'Тренування ніг у Planet Fitness Kyiv', altEn: 'Leg training at Planet Fitness Kyiv', tone: 'wide' },
+  { image: images.galleryLunge, altUa: 'Функціональна вправа у силовій зоні', altEn: 'Functional exercise in the strength area', tone: 'tall' },
   { image: images.galleryStretch, altUa: 'Стретчинг у клубі', altEn: 'Stretching at the club', tone: 'tall' },
-  { image: images.galleryMachines, altUa: 'Тренування на обладнанні', altEn: 'Training on equipment', tone: 'wide' },
   { image: images.galleryRow, altUa: 'Силова вправа у тренажерній зоні', altEn: 'Strength exercise in the gym area', tone: 'tall' },
-  { image: images.galleryWeightStack, altUa: 'Блок тренажера крупним планом', altEn: 'Machine weight stack close-up', tone: 'standard' },
-  { image: images.galleryBackTraining, altUa: 'Силове тренування спини', altEn: 'Back strength training', tone: 'standard' },
-  { image: images.galleryStretchLight, altUa: 'Розтяжка та мобільність', altEn: 'Stretching and mobility', tone: 'tall' },
+  { image: images.galleryLeg, altUa: 'Тренування ніг у Planet Fitness Kyiv', altEn: 'Leg training at Planet Fitness Kyiv', tone: 'standard' },
+  { image: images.floor, altUa: 'Тренування у синій силовій зоні', altEn: 'Training in the blue strength zone', tone: 'standard' },
+  { image: images.group, altUa: 'Командна атмосфера Planet Fitness Kyiv', altEn: 'Planet Fitness Kyiv team atmosphere', tone: 'standard' },
+  { image: images.galleryMachines, altUa: 'Тренування на обладнанні Planet Fitness Kyiv', altEn: 'Training on Planet Fitness Kyiv equipment', tone: 'standard' },
+  { image: images.strength, altUa: 'Силова зона та тренажери Planet Fitness Kyiv', altEn: 'Planet Fitness Kyiv strength zone and machines', tone: 'standard' },
 ] as const
